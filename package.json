@@ -1,0 +1,29 @@
+{
+  "name": "ciebase",
+  "version": "0.1.0",
+  "description": "Basic building blocks for CIE color spaces",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "gulp": "*",
+    "gulp-babel": "*",
+    "gulp-jshint": "*",
+    "mocha": "*"
+  },
+  "repository": "github:baskerville/ciebase.git",
+  "keywords": [
+    "color",
+    "ciexyz",
+    "cie illuminants",
+    "rgb workspaces"
+  ],
+  "author": "Bastien Dejean",
+  "license": "BSD-2-Clause",
+  "bugs": "https://github.com/baskerville/ciebase/issues",
+  "homepage": "https://github.com/baskerville/ciebase",
+  "dependencies": {
+    "mout": "*"
+  }
+}
