@@ -3,7 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-var PI = Math.PI;
+var _Math = Math;
+var PI = _Math.PI;
 
 function fromRadian(r) {
 	var d = r * 180 / PI;

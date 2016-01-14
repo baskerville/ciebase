@@ -3,7 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-var round = Math.round;
+var _Math = Math;
+var round = _Math.round;
 
 function fromHex(hex) {
 	if (hex[0] == "#") {

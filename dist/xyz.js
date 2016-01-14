@@ -4,10 +4,6 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj["default"] = obj; return newObj; } }
-
 var _matrix = require("./matrix");
 
 var matrix = _interopRequireWildcard(_matrix);
@@ -20,10 +16,14 @@ var _workspace = require("./workspace");
 
 var _workspace2 = _interopRequireDefault(_workspace);
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
 // http://www.brucelindbloom.com/Eqn_RGB_XYZ_Matrix.html
 function Converter() {
-	var rgbSpace = arguments.length <= 0 || arguments[0] === undefined ? _workspace2["default"].sRGB : arguments[0];
-	var whitePoint = arguments.length <= 1 || arguments[1] === undefined ? _illuminant2["default"].D65 : arguments[1];
+	var rgbSpace = arguments.length <= 0 || arguments[0] === undefined ? _workspace2.default.sRGB : arguments[0];
+	var whitePoint = arguments.length <= 1 || arguments[1] === undefined ? _illuminant2.default.D65 : arguments[1];
 
 	var primaries = [rgbSpace.r, rgbSpace.g, rgbSpace.b];
 
@@ -49,5 +49,5 @@ function Converter() {
 	};
 }
 
-exports["default"] = Converter;
-module.exports = exports["default"];
+exports.default = Converter;
+module.exports = exports['default'];

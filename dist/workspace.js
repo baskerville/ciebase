@@ -3,9 +3,10 @@
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-var pow = Math.pow;
-var sign = Math.sign;
-var abs = Math.abs;
+var _Math = Math;
+var pow = _Math.pow;
+var sign = _Math.sign;
+var abs = _Math.abs;
 
 var sRgbGamma = {
 	decode: function decode(v) {
@@ -63,5 +64,5 @@ var workspaces = {
 	}
 };
 
-exports["default"] = workspaces;
-module.exports = exports["default"];
+exports.default = workspaces;
+module.exports = exports['default'];
